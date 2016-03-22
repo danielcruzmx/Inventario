@@ -1,4 +1,4 @@
-# InventarioLibros
+# AppInventario
 
 •Desarrollada en Python 3 con la ayuda de QPython 3
 
@@ -41,4 +41,3 @@
 ◦main.py, el módulo principal con las reglas descritas en las opciones de la aplicación
 
 ◦queries.py, las cadenas de texto que usa la App, sentencias SQL
-

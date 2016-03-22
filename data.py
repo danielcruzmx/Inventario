@@ -2,7 +2,7 @@ import sqlite3
 
 class BDatos:
 
-    s_path = '/storage/emulated/0/com.hipipal.qpyplus/projects3/LibroInventario/stock.db3'
+    s_path = '/storage/emulated/0/com.hipipal.qpyplus/projects3/AppInventario/stock.db3'
 
     def __init__(self):
       self.row = []

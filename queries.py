@@ -1,7 +1,7 @@
 q_select = '''
       select *
       from articulos
-      where codigo = %s
+      where cve_isbn = %s
 '''
 
 q_lista = '''
@@ -17,7 +17,7 @@ q_max_id = '''
 q_upd = '''
       update articulos
       set estado = :estado
-      where codigo = %s
+      where cve_isbn = %s
 '''
 
 q_busca = '''
@@ -34,7 +34,7 @@ q_ins = '''
      	categoria,
      	titulo,
       autor,
-      codigo,
+      cve_isbn,
      	editorial,
       estado)
       values (
@@ -42,7 +42,7 @@ q_ins = '''
        		:categoria,
        		:titulo,
        		:autor,
-       		:codigo,
+       		:cve_isbn,
        		:editorial,
        		:estado)
 '''     
@@ -52,16 +52,16 @@ q_crea = ''' create table articulos(
   	      categoria text,
   	      titulo text,
   	      autor text,
-  	      codigo text,
+  	      cve_isbn text,
   	      editorial text,
   	      estado text)
 '''
 
 
 #
-#   'categoria' : 'libros',
-#   'autor' : 'Arturo Fernandez Montoro' ,
-#   'titulo' : 'Python 3 al descubierto',
-#   'editorial' : 'Alfaomega',
-#   'codigo' : '9786077077183'
+#   'categoria' : 'libros',
+#   'autor' : 'Arturo Fernandez Montoro' ,
+#   'titulo' : 'Python 3 al descubierto',
+#   'editorial' : 'Alfaomega',
+#   'cve_isbn' : '9786077077183'
 #

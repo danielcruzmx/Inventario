@@ -15,7 +15,7 @@ class Libro:
   def existe_libro(self):
     ret = False
     if self.data:
-      res = self.lib.existe_isbn(self.data['codigo'])
+      res = self.lib.existe_isbn(self.data['cve_isbn'])
       if res:
          self.data = res
          ret = True
@@ -34,7 +34,7 @@ class Libro:
         
   def actualiza(self):
     if self.data:
-      isbn = self.data['codigo']
+      isbn = self.data['cve_isbn']
       if self.data['estado'] == 'en stock':
          self.lib.act_estado(isbn, self.prest)
       else:
@@ -46,4 +46,3 @@ class Libro:
      
   def crea(self):
      self.lib.crea_tabla()
-
